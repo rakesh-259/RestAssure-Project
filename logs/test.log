@@ -1,0 +1,108 @@
+19:12:28.677 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Started: RestAssureProject
+19:12:28.714 [main] INFO  com.restAPI.listeners.TestListener - 🚀 Test Started: getProfileTest
+19:12:28.719 [main] INFO  com.restAPI.test.getProfileForTest - 🔑 Starting Get Profile API Test...
+19:12:29.844 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: POST
+19:12:29.847 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/auth/login
+19:12:29.848 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Accept=*/*
+Content-Type=application/json
+19:12:30.476 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+19:12:30.513 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMwMjE1MCwiZXhwIjoxNzU2MzA1NzUwfQ.Mx-JsRaJjzcd7xUuesn7pQcyCdYSB90aNAcwrpej3Jo",
+    "type": "Bearer",
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+19:12:30.548 [main] INFO  com.restAPI.test.getProfileForTest - ✅ Successfully logged in. Token received: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMwMjE1MCwiZXhwIjoxNzU2MzA1NzUwfQ.Mx-JsRaJjzcd7xUuesn7pQcyCdYSB90aNAcwrpej3Jo
+19:12:30.553 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: GET
+19:12:30.554 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/users/profile
+19:12:30.554 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMwMjE1MCwiZXhwIjoxNzU2MzA1NzUwfQ.Mx-JsRaJjzcd7xUuesn7pQcyCdYSB90aNAcwrpej3Jo
+Accept=*/*
+19:12:30.665 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+19:12:30.667 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "firstName": "RamuUpdated1",
+    "lastName": "R",
+    "mobileNumber": "9440023999"
+}
+19:12:30.672 [main] INFO  com.restAPI.test.getProfileForTest - 📄 Profile fetched successfully for user: RamuUpdated1
+19:12:30.673 [main] INFO  com.restAPI.test.getProfileForTest - 🎯 Test Passed - FirstName: RamuUpdated1
+19:12:30.676 [main] INFO  com.restAPI.listeners.TestListener - ✅ Test Passed: getProfileTest
+19:12:30.681 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Finished: RestAssureProject
+23:08:55.925 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Started: API Test RestAssureProject
+23:08:55.949 [main] INFO  com.restAPI.listeners.TestListener - 🚀 Test Started: getProfileTest
+23:08:55.953 [main] INFO  com.restAPI.test.getProfileForTest - 🔑 Starting Get Profile API Test...
+23:08:56.921 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: POST
+23:08:56.924 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/auth/login
+23:08:56.925 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Accept=*/*
+Content-Type=application/json
+23:08:57.602 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+23:08:57.638 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNjMzNywiZXhwIjoxNzU2MzE5OTM3fQ.NdcNCwyhMEcRGY-O0xeiXuewW70cmHSIYW_UzII24J0",
+    "type": "Bearer",
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+23:08:57.680 [main] INFO  com.restAPI.test.getProfileForTest - ✅ Successfully logged in. Token received: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNjMzNywiZXhwIjoxNzU2MzE5OTM3fQ.NdcNCwyhMEcRGY-O0xeiXuewW70cmHSIYW_UzII24J0
+23:08:57.686 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: GET
+23:08:57.687 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/users/profile
+23:08:57.688 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNjMzNywiZXhwIjoxNzU2MzE5OTM3fQ.NdcNCwyhMEcRGY-O0xeiXuewW70cmHSIYW_UzII24J0
+Accept=*/*
+23:08:57.854 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+23:08:57.856 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "firstName": "RamuUpdated1",
+    "lastName": "R",
+    "mobileNumber": "9440023999"
+}
+23:08:57.860 [main] INFO  com.restAPI.test.getProfileForTest - 📄 Profile fetched successfully for user: RamuUpdated1
+23:08:57.863 [main] INFO  com.restAPI.test.getProfileForTest - 🎯 Test Passed - FirstName: RamuUpdated1
+23:08:57.866 [main] INFO  com.restAPI.listeners.TestListener - ✅ Test Passed: getProfileTest
+23:08:57.899 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Finished: API Test RestAssureProject
+23:33:37.232 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Started: RestAssureProject
+23:33:37.264 [main] INFO  com.restAPI.listeners.TestListener - 🚀 Test Started: getProfileTest
+23:33:37.268 [main] INFO  com.restAPI.test.getProfileForTest - 🔑 Starting Get Profile API Test...
+23:33:38.089 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: POST
+23:33:38.091 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/auth/login
+23:33:38.091 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Accept=*/*
+Content-Type=application/json
+23:33:38.578 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+23:33:38.606 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNzgxOCwiZXhwIjoxNzU2MzIxNDE4fQ.LWwS3NFOr--hRleoRq9XtEi2CjGG8dqJquF53NZLSmM",
+    "type": "Bearer",
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+23:33:38.636 [main] INFO  com.restAPI.test.getProfileForTest - ✅ Successfully logged in. Token received: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNzgxOCwiZXhwIjoxNzU2MzIxNDE4fQ.LWwS3NFOr--hRleoRq9XtEi2CjGG8dqJquF53NZLSmM
+23:33:38.640 [main] INFO  com.restAPI.filters.LoggingFilter - Request Method: GET
+23:33:38.641 [main] INFO  com.restAPI.filters.LoggingFilter - Request URI: http://64.227.160.186:8080/api/users/profile
+23:33:38.641 [main] INFO  com.restAPI.filters.LoggingFilter - Request Headers: Authorization=Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJSYW11MTIzQGdtYWlsLmNvbSIsImlhdCI6MTc1NjMxNzgxOCwiZXhwIjoxNzU2MzIxNDE4fQ.LWwS3NFOr--hRleoRq9XtEi2CjGG8dqJquF53NZLSmM
+Accept=*/*
+23:33:38.741 [main] INFO  com.restAPI.filters.LoggingFilter - Response Status Code: 200
+23:33:38.742 [main] INFO  com.restAPI.filters.LoggingFilter - Response  Body: {
+    "id": 2389,
+    "username": "Ramu123@gmail.com",
+    "email": "Ramu123@gmail.com",
+    "firstName": "RamuUpdated1",
+    "lastName": "R",
+    "mobileNumber": "9440023999"
+}
+23:33:38.746 [main] INFO  com.restAPI.test.getProfileForTest - 📄 Profile fetched successfully for user: RamuUpdated1
+23:33:38.747 [main] INFO  com.restAPI.test.getProfileForTest - 🎯 Test Passed - FirstName: RamuUpdated1
+23:33:38.749 [main] INFO  com.restAPI.listeners.TestListener - ✅ Test Passed: getProfileTest
+23:33:38.752 [main] INFO  com.restAPI.listeners.TestListener - 🔹 Test Suite Finished: RestAssureProject

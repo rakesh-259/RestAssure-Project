@@ -1,0 +1,4 @@
+# Created at 2025-08-27T23:08:55.042
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Selenium\RestAssured\RestAssureProject\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+
