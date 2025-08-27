@@ -1,24 +1,38 @@
-name: API RestAssure Project
+name: Api RestAssure Project
 
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+  schedule:
+    - cron: "30 23 * * *"   # Runs every day at 5:00 AM IST
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Set up JDK 18
-        uses: actions/setup-java@v4
-        with:
-          java-version: '18'
-          distribution: 'temurin'
-          cache: maven
+    - uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
 
-      - name: Build and Run Tests
-        run: mvn clean test -Dsuite=testng
+    - name: Execute Tests
+      run: mvn clean test -Dsuite=testng | tee test-output.log
+
+    - name: Upload Test Logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-logs
+        path: logs/ 
+
+    - name: Upload Surefire Reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: surefire-reports
+        path: target/surefire-reports/junitreports/TEST-*.xml
